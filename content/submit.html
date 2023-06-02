@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit page</title>
+    
+</head>
+<body>
+    <h1>Process is on going please wait</h1>
+    <p>your firstname:<span id="res"></span></p>
+    <p>your lastname:<span id="res1"></span></p>
+    <p>your password:<span id="res2"></span></p>
+    <script>
+        document.getElementById("res").innerHTML=localStorage.getItem("text");
+        document.getElementById("res1").innerHTML=localStorage.getItem("txt");
+        document.getElementById("res2").innerHTML=localStorage.getItem("textvalue");
+        console.log(localStorage.getItem("text"));
+        console.log(localStorage.getItem("txt"));
+        console.log(localStorage.getItem("textname"));
+    </script>
+    <button onclick="back()">back</button>
+    <script src="/content/index.js"></script> 
+</body>
+</html>
